@@ -40,7 +40,7 @@ It was doing too much with the pytestcase, it was accessing and mutating files a
 It ran initially and the testing proved fruitful (no additional errors)
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
-I did a pytest using 1 and 101, and kept zooming into the number, all the hints were correct
+I did a manual test using 1 and 101, and kept zooming into the number, all the hints were correct
 - Did AI help you design or understand any tests? How?
 AI helped design its own tests, but it left me still confused, so I had to adminster my own knowing the intended output.
 ---
