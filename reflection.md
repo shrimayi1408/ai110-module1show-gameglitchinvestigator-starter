@@ -26,18 +26,23 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+Claude CHATBOT
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). It does not have to be a suggestion that was wrong: over-engineered, out of scope, harder to read, or a poor fit for this codebase all count.
+The attempts being needed to change and how they were the root cause was something I was not expecting at all. I accidentally let it auto push, but I asked it to explain each line it changed and went in and either changed it myself or reviewed and let it stay
+- Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). 
+It was doing too much with the pytestcase, it was accessing and mutating files and just made it much more complicated than necessary. refining code it didnt need to, while im sitting there with no idea if the current logic issues are fixed or not. So i asked it to tell me if the testcase will run or not, and since it did I didn't need to waste time on minimal changes unless the change was absolutely necessary for the purpose of checking if the logic works.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+It ran initially and the testing proved fruitful (no additional errors)
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+I did a pytest using 1 and 101, and kept zooming into the number, all the hints were correct
 - Did AI help you design or understand any tests? How?
-
+AI helped design its own tests, but it left me still confused, so I had to adminster my own knowing the intended output.
 ---
 
 ## 4. What did you learn about Streamlit and state?
