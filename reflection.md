@@ -14,9 +14,12 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Guess 1 (secret is 28)                         | Too Low, shows Go HIGHER!                       | Shows Go LOWER! (wrong direction)                    | None; incorrect UI hint                     |
+| Guess 30 (secret is 28)                        | Too High, shows Go LOWER!                       | Shows Go HIGHER! (wrong direction)                   | None; incorrect UI hint                     |
+| Guess 100 (secret below 100)                   | Reject out-of-range guess or show Go LOWER!     | Can show Go HIGHER! for 100                          | None; misleading result                     |
+| Use all attempts, click New Game, submit guess | New game starts, guesses accepted               | Attempts reset but game stays in game-over state     | Game over. Start a new game to try again.   |
+| Select Easy or Hard, click New Game            | Secret within 1-20 (Easy) or 1-50 (Hard)        | Secret generated from 1-100 regardless of difficulty | None; debug panel shows out-of-range secret |
+| Start new game, no guesses yet                 | Full attempt allowance shown (e.g. 8 on Normal) | Shows one fewer attempt (counter starts at 1)        | None; incorrect attempt display    
 
 ---
 
